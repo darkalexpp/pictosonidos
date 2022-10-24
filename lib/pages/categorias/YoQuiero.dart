@@ -1,5 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 import '../../widgets/ImageCard.dart';
 import '../../objects/pictosonido.dart';
@@ -32,6 +33,17 @@ class YoQuieroPageState extends State<YoQuieroPage> {
     PictoSonido.fromJson({"imagen":'assets/comer/manzana.jpeg',"titulo":'Manzana',"audio":'assets/comer/manzana.m4a'}),
     PictoSonido.fromJson({"imagen":'assets/comer/agua.jpeg',"titulo":'Agua',"audio":'assets/comer/agua.m4a'}),
     PictoSonido.fromJson({"imagen":'assets/comer/galletas.jpeg',"titulo":'Galletas',"audio":'assets/comer/galletas.m4a'}),
+    //nuevos
+    PictoSonido.fromJson({"imagen":'assets/comer/cake.png',"titulo":'Cake',"audio":'assets/comer/Cake.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/comer/cereza (1).png',"titulo":'Cereza',"audio":'assets/comer/Cereza.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/comer/chupete.png',"titulo":'Chupete',"audio":'assets/comer/Chupete.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/comer/frutilla.png',"titulo":'Frutilla',"audio":'assets/comer/Frutilla.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/comer/gelatina.png',"titulo":'Gelatina',"audio":'assets/comer/Gelatina.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/comer/helado.png',"titulo":'Helado',"audio":'assets/comer/Helado.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/comer/limon.png',"titulo":'Limón',"audio":'assets/comer/Limon.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/comer/pastel de chocolate (2).png',"titulo":'Papas fritas',"audio":'assets/comer/Papas fritas.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/comer/patatas fritas.png',"titulo":'Pastel de chocolate',"audio":'assets/comer/Pastel de chocolate.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/comer/sandia.png',"titulo":'Sandía',"audio":'assets/comer/Sandia.m4a'}),
   ];
 
   List<PictoSonido> aseo = [
@@ -39,6 +51,17 @@ class YoQuieroPageState extends State<YoQuieroPage> {
     PictoSonido.fromJson({"imagen":'assets/aseo/dientes.jpeg',"titulo":'Lavarme los Dientes',"audio":'assets/aseo/dientes.m4a'}),
     PictoSonido.fromJson({"imagen":'assets/aseo/cara.jpeg',"titulo":'Lavarme la Cara',"audio":'assets/aseo/cara.m4a'}),
     PictoSonido.fromJson({"imagen":'assets/aseo/manos.jpeg',"titulo":'Laverme las Manos',"audio":'assets/aseo/manos.m4a'}),
+    //nuevos
+    PictoSonido.fromJson({"imagen":'assets/aseo/ayuda.png',"titulo":'Ayuda',"audio":'assets/aseo/Ayuda.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/aseo/banerme con juguetes.png',"titulo":'Bañarme con juguetes',"audio":'assets/aseo/Banarme con juguetes.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/aseo/coger el papel..png',"titulo":'Coger el papel',"audio":'assets/aseo/Coger el papel.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/aseo/escurrir las manos..png',"titulo":'Escurrir las manos',"audio":'assets/aseo/Escurrir las manos.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/aseo/limpiar el cepillo (1).png',"titulo":'Limpiar el cepillo',"audio":'assets/aseo/Limpiar el cepillo.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/aseo/limpiar el cepillo de dientes..png',"titulo":'Limpiar el cepillo de dientes',"audio":'assets/aseo/Limpiar el cepillo de dientes.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/aseo/limpiar.png',"titulo":'Limpiar',"audio":'assets/aseo/Limpiar.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/aseo/limpiarme con la toalla.png',"titulo":'Limpiarme con la toalla',"audio":'assets/aseo/Limpiarme con la toalla.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/aseo/quedarme solo en el bano.png',"titulo":'Quedarme solo en el baño',"audio":'assets/aseo/Quedarme solo en el bano.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/aseo/sonarme la nariz..png',"titulo":'Sonarme la nariz',"audio":'assets/aseo/Sonarme la nariz.m4a'}),
   ];
 
   List<PictoSonido> juegos = [
@@ -46,14 +69,37 @@ class YoQuieroPageState extends State<YoQuieroPage> {
     PictoSonido.fromJson({"imagen":'assets/juegos/carro.jpeg',"titulo":'Carro',"audio":'assets/juegos/carro.m4a'}),
     PictoSonido.fromJson({"imagen":'assets/juegos/pelota.jpeg',"titulo":'Pelota',"audio":'assets/juegos/pelota.m4a'}),
     PictoSonido.fromJson({"imagen":'assets/juegos/jugar.jpeg',"titulo":'Jugar',"audio":'assets/juegos/jugar.m4a'}),
+    //nuevos
+    PictoSonido.fromJson({"imagen":'assets/juegos/anillos.png',"titulo":'Anillos',"audio":'assets/juegos/Anillos.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/juegos/camion de juguete.png',"titulo":'Camión de juguete',"audio":'assets/juegos/Camion de juguete.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/juegos/muneco.png',"titulo":'Muñeco',"audio":'assets/juegos/Muneco.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/juegos/patito de goma (1).png',"titulo":'Patito de goma',"audio":'assets/juegos/Patito de goma.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/juegos/peluche de dinosaurio.png',"titulo":'Peluche',"audio":'assets/juegos/Peluche.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/juegos/pop it.png',"titulo":'Pop it',"audio":'assets/juegos/Pop it 2.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/juegos/rompecabezas para atar zapatos.png',"titulo":'Rompe cabezas para atar los zapatos',"audio":'assets/juegos/Rompe cabezas para atar los zapatos.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/juegos/rompecabezas.png',"titulo":'Rompe cabezas',"audio":'assets/juegos/Rompe cabezas.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/juegos/titeres.png',"titulo":'Títeres',"audio":'assets/juegos/Titeres.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/juegos/triciclo.png',"titulo":'Triciclo',"audio":'assets/juegos/Triciclo.m4a'}),
 
   ];
 
-  List<PictoSonido> rutina = [
+  List<PictoSonido> aula = [
     PictoSonido.fromJson({"imagen":'assets/rutina/cantar.jpeg',"titulo":'Cantar',"audio":'assets/rutina/cantar.m4a'}),
     PictoSonido.fromJson({"imagen":'assets/rutina/cuento.jpeg',"titulo":'Cuento',"audio":'assets/rutina/cuento.m4a'}),
     PictoSonido.fromJson({"imagen":'assets/rutina/pintar.jpeg',"titulo":'Pintar',"audio":'assets/rutina/pintar.m4a'}),
     PictoSonido.fromJson({"imagen":'assets/rutina/jugar.jpeg',"titulo":'Jugar',"audio":'assets/rutina/jugar.m4a'}),
+    //nuevos
+    PictoSonido.fromJson({"imagen":'assets/rutina/bailar..png',"titulo":'Bailar',"audio":'assets/rutina/Bailar.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/rutina/escuchar musica..png',"titulo":'Escuchar música',"audio":'assets/rutina/Escuchar musica.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/rutina/levantar la mano..png',"titulo":'Levantar la mano',"audio":'assets/rutina/Levantar la mano.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/rutina/levantarme de la silla..png',"titulo":'Levantarme de la silla',"audio":'assets/rutina/Levantarme de la silla.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/rutina/pintura de agua.png',"titulo":'Pintura de agua',"audio":'assets/rutina/Pintura de agua.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/rutina/pinturas..png',"titulo":'Pinturas',"audio":'assets/rutina/Pinturas.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/rutina/plastilina..png',"titulo":'Plastilina',"audio":'assets/rutina/Plastilina.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/rutina/senalar..png',"titulo":'Señalar',"audio":'assets/rutina/Senalar.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/rutina/sentarme..png',"titulo":'Sentarme',"audio":'assets/rutina/Sentarme.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/rutina/soplar..png',"titulo":'Soplar',"audio":'assets/rutina/Soplar.m4a'}),
+
   ];
 
   late List<PictoSonido> listaPictoSonidos;
@@ -71,8 +117,8 @@ class YoQuieroPageState extends State<YoQuieroPage> {
       case "Juegos":
         listaPictoSonidos=juegos;
         break;
-      case 'Rutina de aula':
-        listaPictoSonidos=rutina;
+      case 'aula':
+        listaPictoSonidos=aula;
         break;
     }
     listaPictoSonidos.shuffle();
@@ -80,7 +126,7 @@ class YoQuieroPageState extends State<YoQuieroPage> {
 
   @override
   Widget build(BuildContext context) {
-    //Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body:Column(
           children: [
@@ -125,25 +171,37 @@ class YoQuieroPageState extends State<YoQuieroPage> {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: Row(
-                  children: List.generate(listaPictoSonidos.length, (index) =>
-                      Expanded(
-                        child: GestureDetector(
-                          onTap: () {
-                            setState((){
-                              seleccionado = listaPictoSonidos[index];
-                              widgetSeleccionado = ImageCard(pictoSonido: seleccionado!,
-                                borderColor: Theme.of(context).colorScheme.secondary,key: ValueKey(index),);
-                              player.play(AssetSource('yoquiero.m4a'));
-                              Future.delayed(const Duration(milliseconds: 1200), (){
-                                player.play(AssetSource(seleccionado!.audio.replaceAll('assets/', '')));
-                              });
-                            });
-                          },
-                          child:  ImageCard(pictoSonido: listaPictoSonidos[index],
-                            textColor: Color(0xffe57d90),
-                            borderColor: Theme.of(context).colorScheme.secondary,)),)
-                  )
+                child: SizedBox(
+                  width: size.width,
+                  child: CarouselSlider(
+                      items: List.generate(listaPictoSonidos.length, (index) =>
+                          Expanded(
+                            child: GestureDetector(
+                                onTap: () {
+                                  setState((){
+                                    seleccionado = listaPictoSonidos[index];
+                                    widgetSeleccionado = ImageCard(pictoSonido: seleccionado!,
+                                      borderColor: Theme.of(context).colorScheme.secondary,key: ValueKey(index),);
+                                    player.play(AssetSource('yoquiero.m4a'));
+                                    Future.delayed(const Duration(milliseconds: 1200), (){
+                                      player.play(AssetSource(seleccionado!.audio.replaceAll('assets/', '')));
+                                    });
+                                  });
+                                },
+                                child:  ImageCard(pictoSonido: listaPictoSonidos[index],
+                                  textColor: Color(0xffe57d90),
+                                  borderColor: Theme.of(context).colorScheme.secondary,)),),),
+                      options: CarouselOptions(
+                        aspectRatio: 1/1,
+                        viewportFraction: 0.25,
+                        initialPage: 1,
+                        enableInfiniteScroll: true,
+                        reverse: false,
+                        enlargeCenterPage: true,
+                        onPageChanged: (int d,f){},
+                        scrollDirection: Axis.horizontal,
+                      )
+                  ),
                 ),
               ),
             ),

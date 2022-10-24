@@ -32,10 +32,10 @@ class CategoriasPage extends StatefulWidget {
       'align': Alignment.bottomLeft,
     },
     {
-      'nombre': 'RUTINA DE AULA',
+      'nombre': 'ACTIVIDADES Y ELEMENTOS DEL AULA',
       'icono': 'assets/categorias/rutina.jpeg',
       'truecolor' : true,
-      'pagina': YoQuieroPage(tipo:'Rutina de aula'),
+      'pagina': YoQuieroPage(tipo:'aula'),
       'align': Alignment.bottomRight,
     },
   ];
