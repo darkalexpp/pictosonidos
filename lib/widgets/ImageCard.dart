@@ -19,6 +19,7 @@ class ImageCard extends StatelessWidget {
               child: Card(
                 elevation: 8,
                 shadowColor: Colors.black,
+                color: Colors.white,
                 semanticContainer: true,
                 clipBehavior: Clip.antiAliasWithSaveLayer,
                 shape: RoundedRectangleBorder(
@@ -28,10 +29,8 @@ class ImageCard extends StatelessWidget {
                         color: borderColor ?? Colors.transparent
                     )
                 ),
-                child: Container(
-                    child: Image.asset(pictoSonido.imagen,
-                      fit: BoxFit.cover,)
-                ),
+                child: Image.asset(pictoSonido.imagen,
+                  fit: BoxFit.cover,),
               ),
             ),
             Text(

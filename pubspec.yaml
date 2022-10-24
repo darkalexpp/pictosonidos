@@ -80,6 +80,8 @@ flutter:
     - assets/aseo/
     - assets/juegos/
     - assets/rutina/
+    - assets/hogar/
+    - assets/vestimenta/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

@@ -99,6 +99,40 @@ class YoQuieroPageState extends State<YoQuieroPage> {
     PictoSonido.fromJson({"imagen":'assets/rutina/senalar..png',"titulo":'Señalar',"audio":'assets/rutina/Senalar.m4a'}),
     PictoSonido.fromJson({"imagen":'assets/rutina/sentarme..png',"titulo":'Sentarme',"audio":'assets/rutina/Sentarme.m4a'}),
     PictoSonido.fromJson({"imagen":'assets/rutina/soplar..png',"titulo":'Soplar',"audio":'assets/rutina/Soplar.m4a'}),
+  ];
+
+  List<PictoSonido> hogar = [
+    PictoSonido.fromJson({"imagen":'assets/hogar/almohada.png',"titulo":'Almohada',"audio":'assets/hogar/Almohada.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/cama.png',"titulo":'Cama',"audio":'assets/hogar/Cama.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/celular.png',"titulo":'Celular',"audio":'assets/hogar/Celular.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/cocina.png',"titulo":'Cocina',"audio":'assets/hogar/Cocina.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/cuchara.png',"titulo":'Cuchara',"audio":'assets/hogar/Cuchara.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/jardin.png',"titulo":'Jardín',"audio":'assets/hogar/Jardin.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/juguetes.png',"titulo":'Juguetes',"audio":'assets/hogar/Juguetes.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/mesa.png',"titulo":'Mesa',"audio":'assets/hogar/Mesa.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/plato.png',"titulo":'Plato',"audio":'assets/hogar/Plato.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/sofa.png',"titulo":'Sofá',"audio":'assets/hogar/Sofa.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/television.png',"titulo":'Televisión',"audio":'assets/hogar/Television.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/tenedor.png',"titulo":'Tenedor',"audio":'assets/hogar/Tenedor.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/hogar/vaso.png',"titulo":'Vaso',"audio":'assets/hogar/Vaso.m4a'}),
+  ];
+
+  List<PictoSonido> vestimenta = [
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/body.png',"titulo":'Body',"audio":'assets/vestimenta/Body.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/chaqueta..png',"titulo":'Chaqueta',"audio":'assets/vestimenta/Chaqueta.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/chompa.png',"titulo":'Chompa',"audio":'assets/vestimenta/Chompa.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/crema de sol.png',"titulo":'Crema de sol',"audio":'assets/vestimenta/Crema de sol.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/gorra..png',"titulo":'Gorra',"audio":'assets/vestimenta/Gorra.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/mandil.png',"titulo":'Mandil',"audio":'assets/vestimenta/Mandil.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/medias.png',"titulo":'Medias',"audio":'assets/vestimenta/Medias.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/panal.png',"titulo":'Pañal',"audio":'assets/vestimenta/Panal.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/pantalon..png',"titulo":'Pantalón',"audio":'assets/vestimenta/Pantalon.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/ponerme la casaca .png',"titulo":'Ponerme la casaca',"audio":'assets/vestimenta/Ponerme la casaca.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/quitarme la media.png',"titulo":'Quitarme la media',"audio":'assets/vestimenta/Quitarme la media.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/quitarme los zapatos.png',"titulo":'Quitarme los zapatos',"audio":'assets/vestimenta/Quitarme los zapatos.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/ropa interior.png',"titulo":'Ropa interior',"audio":'assets/vestimenta/Ropa interior.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/subirme el pantalon.png',"titulo":'Subirme el pantalón',"audio":'assets/vestimenta/Subirme el pantalon.m4a'}),
+    PictoSonido.fromJson({"imagen":'assets/vestimenta/subirse la camiseta.png',"titulo":'Subirme la camiseta',"audio":'assets/vestimenta/Subirme la camiseta.m4a'}),
 
   ];
 
@@ -119,6 +153,12 @@ class YoQuieroPageState extends State<YoQuieroPage> {
         break;
       case 'aula':
         listaPictoSonidos=aula;
+        break;
+      case 'hogar':
+        listaPictoSonidos=hogar;
+        break;
+      case 'vestimenta':
+        listaPictoSonidos=vestimenta;
         break;
     }
     listaPictoSonidos.shuffle();
