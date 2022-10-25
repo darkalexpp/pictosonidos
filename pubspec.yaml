@@ -39,6 +39,7 @@ dependencies:
   audioplayers: ^1.0.1
   flutter_gif: ^0.0.4
   page_transition: ^2.0.9
+  carousel_slider: ^4.1.1
 
 flutter_icons:
   android: "launcher_icon"
@@ -79,6 +80,8 @@ flutter:
     - assets/aseo/
     - assets/juegos/
     - assets/rutina/
+    - assets/hogar/
+    - assets/vestimenta/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

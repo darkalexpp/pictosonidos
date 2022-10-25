@@ -32,10 +32,24 @@ class CategoriasPage extends StatefulWidget {
       'align': Alignment.bottomLeft,
     },
     {
-      'nombre': 'RUTINA DE AULA',
+      'nombre': 'ACTIVIDADES Y ELEMENTOS DEL AULA',
       'icono': 'assets/categorias/rutina.jpeg',
       'truecolor' : true,
-      'pagina': YoQuieroPage(tipo:'Rutina de aula'),
+      'pagina': YoQuieroPage(tipo:'aula'),
+      'align': Alignment.bottomRight,
+    },
+    {
+      'nombre': 'HOGAR',
+      'icono': 'assets/categorias/hogar.png',
+      'truecolor' : true,
+      'pagina': YoQuieroPage(tipo:'hogar'),
+      'align': Alignment.bottomLeft,
+    },
+    {
+      'nombre': 'VESTIMENTA',
+      'icono': 'assets/categorias/vestimenta.png',
+      'truecolor' : true,
+      'pagina': YoQuieroPage(tipo:'vestimenta'),
       'align': Alignment.bottomRight,
     },
   ];
@@ -78,13 +92,14 @@ class CategoriasPageState extends State<CategoriasPage> {
               child: Row(children: [
                 Expanded(child: CardCategria(widget.categorias[0])),
                 Expanded(child: CardCategria(widget.categorias[1])),
-
+                Expanded(child: CardCategria(widget.categorias[2])),
               ],),
             ),
             Expanded(
               child: Row(children: [
-                Expanded(child: CardCategria(widget.categorias[2])),
                 Expanded(child: CardCategria(widget.categorias[3])),
+                Expanded(child: CardCategria(widget.categorias[4])),
+                Expanded(child: CardCategria(widget.categorias[5])),
               ],)
             )
           ],
