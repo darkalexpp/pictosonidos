@@ -194,6 +194,7 @@ class YoQuieroPageState extends State<YoQuieroPage> {
             ),
             Expanded( child:
             Container(
+			  width: size.width,
               decoration: BoxDecoration(
                 color: Colors.grey[100],
                 borderRadius: const BorderRadius.only(
@@ -211,12 +212,9 @@ class YoQuieroPageState extends State<YoQuieroPage> {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: SizedBox(
-                  width: size.width,
                   child: CarouselSlider(
                       items: List.generate(listaPictoSonidos.length, (index) =>
-                          Expanded(
-                            child: GestureDetector(
+							GestureDetector(
                                 onTap: () {
                                   setState((){
                                     seleccionado = listaPictoSonidos[index];
@@ -230,7 +228,7 @@ class YoQuieroPageState extends State<YoQuieroPage> {
                                 },
                                 child:  ImageCard(pictoSonido: listaPictoSonidos[index],
                                   textColor: Color(0xffe57d90),
-                                  borderColor: Theme.of(context).colorScheme.secondary,)),),),
+                                  borderColor: Theme.of(context).colorScheme.secondary,)),),
                       options: CarouselOptions(
                         aspectRatio: 1/1,
                         viewportFraction: 0.25,
@@ -242,7 +240,6 @@ class YoQuieroPageState extends State<YoQuieroPage> {
                         scrollDirection: Axis.horizontal,
                       )
                   ),
-                ),
               ),
             ),
             )
