@@ -211,7 +211,7 @@ class YoQuieroPageState extends State<YoQuieroPage> {
                 ],
               ),
               child: Padding(
-                padding: const EdgeInsets.all(20.0),
+                padding: const EdgeInsets.symmetric(vertical: 10.0),
                   child: CarouselSlider(
                       items: List.generate(listaPictoSonidos.length, (index) =>
 							GestureDetector(
